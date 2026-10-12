@@ -1,0 +1,159 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+/* Login Box */
+.wrapper {
+    width: 420px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Heading */
+.wrapper h1 {
+    text-align: center;
+    color: #e60000;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+/* Input Box */
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    margin: 25px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    padding: 0 50px 0 20px;
+    border: 2px solid #dddddd;
+    outline: none;
+    border-radius: 30px;
+    background: #fff;
+    color: #222;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Input Focus */
+.input-box input:focus {
+    border-color: #e60000;
+    box-shadow: 0 0 8px rgba(230, 0, 0, 0.2);
+}
+
+/* Placeholder */
+.input-box input::placeholder {
+    color: #999;
+}
+
+/* Login Icons - RED */
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e60000;
+    font-size: 22px;
+}
+
+/* Remember & Forgot */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -5px 0 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remember-forgot input {
+    accent-color: #e60000;
+}
+
+.remember-forgot a {
+    color: #e60000;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: #e60000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #c00000;
+    box-shadow: 0 8px 20px rgba(230, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+/* Register */
+.register-link {
+    text-align: center;
+    margin-top: 25px;
+    color: #555;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #e60000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+        padding: 30px 25px;
+    }
+
+    .wrapper h1 {
+        font-size: 32px;
+    }
+}
