@@ -1,0 +1,113 @@
+```css
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+}
+
+/* Heading / Label */
+label {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Box */
+input[type="text"] {
+    width: 300px;
+    max-width: 100%;
+    padding: 14px 16px;
+    margin: 10px 0 20px;
+    font-size: 17px;
+    font-family: inherit;
+    color: #333;
+    background: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Input Focus Effect */
+input[type="text"]:focus {
+    border-color: #ffd166;
+    box-shadow: 0 0 12px rgba(255, 209, 102, 0.5);
+    transform: scale(1.02);
+}
+
+/* Submit Button */
+button {
+    padding: 13px 35px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: inherit;
+    color: #333;
+    background: linear-gradient(135deg, #ffd166, #ffb703);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #ffb703, #ffd166);
+}
+
+/* Button Click Effect */
+button:active {
+    transform: scale(0.96);
+}
+
+/* Result Styling */
+#resultElement {
+    margin-top: 25px;
+    padding: 12px 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    label {
+        font-size: 21px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #resultElement {
+        font-size: 16px;
+    }
+}
+```
